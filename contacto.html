@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Logica Fidelis - Desarrollo Web</title>
+</head>
+<body>
+
+<nav>
+		<a href="#"><img src="/LogicaFidelisLogo.png" style="height: 80px" alt="logo"></a>
+	
+		<ul class="grande">
+			<a href="/index.html"><li>
+				<div class="li-border"></div>
+				Página Principal
+			</li></a>
+			<a href="/servicios.html"><li>
+				<div class="li-border"></div>
+				Servicios
+			</li></a>
+			<a href="/portfolio.html"><li>
+				<div class="li-border"></div>
+				Proyectos anteriores
+			</li></a>
+			<a href="/contacto.html"><li  class="highlight">
+				Haznos una pregunta
+			</li></a>
+			<a href="#" style="display:inline"><li>
+				<i class="fa-solid fa-phone" style="display:block"></i>Consulta Gratis<br>666 555 444
+			</li></a>
+		</ul>
+
+		<button id="nav-button"><i class="fa-solid fa-bars"></i></button>
+	
+		<ul class="peque" id="ul-peque">
+			<a href="#"><li>
+				<div class="li-border"></div>
+				Página Principal
+			</li></a>
+			<a href="#"><li>
+				<div class="li-border"></div>
+				¿Por qué nosotros?
+			</li></a>
+			<a href="#"><li>
+				<div class="li-border"></div>
+				Servicios
+			</li></a>
+			<a href="#"><li>
+				<div class="li-border"></div>
+				Proyectos anteriores
+			</li></a>
+			<a href="#"><li>
+				<div class="li-border"></div>
+				Pregunta lo que quieras
+			</li></a>
+			<a href="#"><li>
+				<i class="fa-solid fa-phone"></i> Consulta Gratis - 666 555 444
+			</li></a>
+		</ul>
+	</nav>
+
+    <section class="contacto">		
+		<div class="elegir-pregunta">
+			<button class="active" id="elegir-presupuesto">Quiero pedir un presupuesto</button>
+			<button class="" id="elegir-informacion">Tengo otra clase de pregunta</button>
+		</div>
+        <div class="form-container active" id="bloque-presupuesto">
+            <form action="send" method="post">
+				<h2>Cuéntanos sobre ti y tu proyecto</h2>
+                <div class="inp">
+					<input type="text" name="nombre" id="nombre" placeholder="Nombre*">
+                </div>
+                <div class="inp">
+                    <input type="text" name="email" id="email" placeholder="Email*">
+                </div>
+                <div class="inp">
+                    <input type="text" name="telefono" id="telefono"placeholder="Teléfono">
+                </div>
+				<div class="inp">
+                	<input type="text" name="company" id="company" placeholder="Compañía">
+                </div>
+				<h3>¿En qué te podemos ayudar?</h3>
+				<div class="checkbox-container">
+					<span><input type="checkbox"><p>Desarrollo web</p></span>
+					<span><input type="checkbox"><p>Desarrollo UI/UX</p></span>
+				</div>
+				<div class="checkbox-container">
+					<span><input type="checkbox"><p>Comercio en línea</p></span>						
+					<span><input type="checkbox"><p>Marketing en Internet</p></span>
+				</div>
+				<h3>Describe tu proyecto</h3>
+				<textarea name="" id="" cols="200" rows="10"></textarea>
+				<button class="active">Enviar</button>
+				<p>Usaremos esta información únicamente para contactarte en función de lo que necesites. No queremos venderte nada ni tampoco enviarte spam. <i class="fa-regular fa-hand-spock"></i></p>
+            </form>
+        </div>
+        <div class="form-container-addendum active" id="bloque-presupuesto-addendum" >
+
+		</div>
+		<div class="form-container" id="bloque-pregunta">
+            <form action="send" method="post">
+				<h2>Pregunta lo que quieras</h2>
+                <div class="inp">
+					<input type="text" name="nombre" id="nombre" placeholder="Nombre*">
+                </div>
+                <div class="inp">
+                    <input type="text" name="email" id="email" placeholder="Email*">
+                </div>
+                <div class="inp">
+                    <input type="text" name="telefono" id="telefono"placeholder="Teléfono">
+                </div>
+				<div class="inp">
+                	<input type="text" name="company" id="company" placeholder="Compañía">
+                </div>
+				<h3>Introduce aquí tu pregunta</h3>
+				<textarea name="" id="" cols="200" rows="10"></textarea>
+				<button class="active">Enviar</button>
+				<p>Usaremos esta información únicamente para contactarte en función de lo que necesites. No queremos venderte nada ni tampoco enviarte spam. <i class="fa-regular fa-hand-spock"></i></p>
+            </form>
+        </div>
+        <div class="form-container-addendum" id="bloque-pregunta-addendum">
+			<div class="cuadro-informacion">
+				<div class="cuadro-texto">
+					<p><i class="fa-solid fa-phone-volume"></i> Teléfono: 666 555 444</p>
+				</div>
+				<div class="cuadro-texto">
+					<p><i class="fa-regular fa-envelope"></i> Email: logicafidelis@gmail.com</p>
+				</div>
+			</div>
+		</div>
+
+    </section>
+
+	<!-- Footer -->
+	<footer>
+		<div class="barra">
+			<p><i class="fa-regular fa-envelope"></i>Escríbenos: <a href="">logicafidelis@gmail.com</a></p>
+			<p><i class="fa-solid fa-phone-flip"></i>Llámanos: <a href="">663 20 33 22</a></p>
+			<p class="footer-submit" style="font-weight: bold;"><a href="">Coméntanos tu proyecto <i class="fa-solid fa-arrow-right"></i></a></p>
+		</div>
+		<div class="barra">
+			<a href="#"><img src="/LogicaFidelisLogo_SinSlogan_BW.png" style="height: 50px" alt="logo"></a>
+			<ul>
+				<li>
+					<a href="">
+						Nuestra empresa
+					</a>
+				</li>
+				<li>&bull;
+					<a href="">
+						Lo que hacemos
+					</a>
+				</li>
+				<li>&bull;
+					<a href="">
+						Nuestro trabajo
+					</a>
+				</li>
+				<li>&bull;
+					<a href="">
+						Contacto
+					</a>
+				</li>
+				<li>&bull;
+					<a href="">
+						Privacidad
+					</a>
+				</li>
+			</ul>
+		</div>
+	</footer>
+
+	<script type="text/javascript" src="scriptContacto.js"></script>
+</body>
+</html>
