@@ -8,29 +8,44 @@ navButton.addEventListener('click', () => {
 })
 
 // Scroll appear para Info1 ("¿Por qué Logica Fidelis?")
-scrollAppearServicio;
+
 window.addEventListener('scroll', scrollAppearServicio);
 const infoWeb = document.getElementById('infoWeb');
 const infoMarketing = document.getElementById('infoMarketing');
 const infoEcommerce = document.getElementById('infoEcommerce');
 const infoGestion = document.getElementById('infoGestion');
+
+const textoWeb = document.getElementById('textoWeb');
+const textoMarketing = document.getElementById('textoMarketing');
+const textoEcommerce = document.getElementById('textoEcommerce');
+const textoGestion = document.getElementById('textoGestion');
+
+const imgWeb = document.getElementById('imgWeb');
+const imgMarketing = document.getElementById('imgMarketing');
+const imgEcommerce = document.getElementById('imgEcommerce');
+const imgGestion = document.getElementById('imgGestion');
+scrollAppearServicio;
 function scrollAppearServicio() {
     const triggerBottom = window.innerHeight / 5 * 4;
     const elemTopW = infoWeb.getBoundingClientRect().top;
     if(elemTopW < triggerBottom) {
-        infoWeb.classList.add('mostrar');
+        textoWeb.classList.add('mostrar');
+        imgWeb.classList.add('mostrar');
     }
     const elemTopM = infoMarketing.getBoundingClientRect().top;
     if(elemTopM < triggerBottom) {
-        infoMarketing.classList.add('mostrar');
+        textoMarketing.classList.add('mostrar');
+        imgMarketing.classList.add('mostrar');
     }
     const elemTopE = infoEcommerce.getBoundingClientRect().top;
     if(elemTopE < triggerBottom) {
-        infoEcommerce.classList.add('mostrar');
+        textoEcommerce.classList.add('mostrar');
+        imgEcommerce.classList.add('mostrar');
     }
     const elemTopG = infoGestion.getBoundingClientRect().top;
     if(elemTopG < triggerBottom) {
-        infoGestion.classList.add('mostrar');
+        textoGestion.classList.add('mostrar');
+        imgGestion.classList.add('mostrar');
     }
         
 }
