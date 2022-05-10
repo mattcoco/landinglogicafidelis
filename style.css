@@ -365,7 +365,7 @@ section .barra-quiero .quiero:hover p {
 .info2 {
 	transform: translateX(-200%);
 }
-section .servicios-container {
+section .desktop .servicios-container {
 	position: relative;
 	display: flex;
 	align-items: center;
@@ -374,16 +374,16 @@ section .servicios-container {
 	transform: translateX(200%);
 	transition: transform 0.4s ease;
 }
-section .servicios-container.mostrar {
+section .desktop .servicios-container.mostrar {
 	transform: translateX(0);
 	transition: transform 0.4s ease;
 }
 /* Definición de la clase círculo. Hay circulo grande (el central) y circulo pequeño (el de cada servicio) */
-section .servicios-container .circulo {
+section .desktop .servicios-container .circulo {
 	border-radius: 50%;
 	box-shadow: rgba(149, 157, 165, 0.4) 0px 8px 24px;
 }
-section .servicios-container .circulo.grande {
+section .desktop .servicios-container .circulo.grande {
 	height: 400px;
 	width: 400px;
 	position: relative;	
@@ -398,7 +398,7 @@ section .servicios-container .circulo.grande {
 	margin-bottom: 20px;
 }
 /* Cada bloque contiene el texto + el círculo de cada servicio */
-section .servicios-container .bloque {
+section .desktop .servicios-container .bloque {
 	position: absolute;
 	display: flex;
 	align-items: center;
@@ -406,32 +406,32 @@ section .servicios-container .bloque {
 	padding: 15px;
 }
 /* Posicionamiento de cada bloque (circulo + texto) */
-section .servicios-container .bloque:nth-child(1) {
+section .desktop .servicios-container .bloque:nth-child(1) {
 	top: 30px;
 	left: 80px;
 	transform: translateX(-100%);
 	justify-content: right;
 }
-section .servicios-container .bloque:nth-child(2) {
+section .desktop .servicios-container .bloque:nth-child(2) {
 	bottom: 30px;
 	left: 80px;
 	transform: translateX(-100%);	
 	justify-content: right;
 }
-section .servicios-container .bloque:nth-child(3) {
+section .desktop .servicios-container .bloque:nth-child(3) {
 	top: 30px;
 	right: 80px;
 	transform: translateX(100%);	
 	justify-content: left;
 }
-section .servicios-container .bloque:nth-child(4) {
+section .desktop .servicios-container .bloque:nth-child(4) {
 	bottom: 30px;
 	right: 80px;
 	transform: translateX(100%);	
 	justify-content: left;
 }
 
-section .servicios-container .bloque .circulo.peque {
+section .desktop .servicios-container .bloque .circulo.peque {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -444,25 +444,25 @@ section .servicios-container .bloque .circulo.peque {
 	transition: color 0.25s ease;
 }
 /* Margen para cada circulo pequeño, dependiendo de si está a la izquierda (1 y 2) o a la derecha (3 y 4) */
-section .servicios-container .bloque:nth-child(1) .circulo.peque {
+section .desktop .servicios-container .bloque:nth-child(1) .circulo.peque {
 	margin-left: 20px;
 }
-section .servicios-container .bloque:nth-child(2) .circulo.peque {
+section .desktop .servicios-container .bloque:nth-child(2) .circulo.peque {
 	margin-left: 20px;
 }
-section .servicios-container .bloque:nth-child(3) .circulo.peque {
+section .desktop .servicios-container .bloque:nth-child(3) .circulo.peque {
 	margin-right: 20px;
 }
-section .servicios-container .bloque:nth-child(4) .circulo.peque {
+section .desktop .servicios-container .bloque:nth-child(4) .circulo.peque {
 	margin-right: 20px;
 }
 
-section .servicios-container .bloque:hover .circulo.peque {
+section .desktop .servicios-container .bloque:hover .circulo.peque {
 	color: var(--color-segundo);
 	transition: color 0.25s ease;
 }
 
-section .servicios-container .bloque .texto {
+section .desktop .servicios-container .bloque .texto {
 	display: flex;
 	flex-direction: column;
 	text-align: right;
@@ -470,26 +470,59 @@ section .servicios-container .bloque .texto {
 	padding: 8px;	
 	transition: background-color ease 0.3s, color ease 0.3s;
 }
-section .servicios-container .bloque:hover .texto {
+section .desktop .servicios-container .bloque:hover .texto {
 	color: #FFF;
 	background-color: rgba(88, 0, 255, 0.9);
 	transition: background-color ease 0.3s, color ease 0.3s;
 }
 
-section .servicios-container .bloque:nth-child(3) .texto,
-section .servicios-container .bloque:nth-child(4) .texto {
+section .desktop .servicios-container .bloque:nth-child(3) .texto,
+section .desktop .servicios-container .bloque:nth-child(4) .texto {
 	text-align: left;
 }
-section .servicios-container .bloque h3 {
+section .desktop .servicios-container .bloque h3 {
 	margin: 0;
 	display: block;
 	text-transform: uppercase;
 }
 
-section .servicios-container .bloque p {
+section .desktop .servicios-container .bloque p {
 	margin: 0;
 	display: block;
 	color: inherit;
+}
+/* Clases para resolución tableta y móvil */
+/* h1 //.desktop .servicios-container .bloque .icono //.texto*/
+section.info2 .tablet {
+	width: 100%;
+}
+
+section.info2 .tablet h1 {
+	margin: 0;
+	background-color: red;
+}
+section.info2 .tablet .servicios-container {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+section.info2 .tablet .servicios-container .container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 50%;
+	margin: 0;
+}
+
+section.info2 .tablet .servicios-container .container .bloque {
+	width: 98%;
+	height: 200px;
+	background: rgb(216,0,255);
+	background: linear-gradient(45deg, rgba(216,0,255,1) 0%, rgba(88,0,255,1) 50%, rgba(85,24,255,1) 100%);
+	margin: 5px;
+	border-radius: 30px;
+	color: #FFF;
 }
 
 /*** SECCIÓN: Portafolio ***/
@@ -869,9 +902,7 @@ section.servicios h1 {
 	font-size: 5rem;
 	text-transform: uppercase;
 }
-section.servicios .bg-odd {
-	/* background-color: rgba(0, 0, 0, 0.1); */
-}
+
 section.servicios .bg-even {
 	background: rgb(255,146,0);
 	background: linear-gradient(45deg, rgba(255,146,0,1) 0%, rgba(255,0,102,1) 100%); 
@@ -1064,7 +1095,7 @@ footer .barra ul li {
 }
 
 
-section .servicios-container .bloque:hover .ripple {
+section .desktop .servicios-container .bloque:hover .ripple {
 	visibility: visible;
 }
 /* Por si quiero poner el efecto del ripple con hover en el circulo, y no con el hover en el bloque entero */

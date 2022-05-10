@@ -73,33 +73,33 @@
 		<!-- Contenedor del formulario form-container, para las preguntas de Presupuesto -->
         <!-- <div class="container"> -->
 		<div class="form-container" id="bloque-presupuesto">
-			<form action="send" method="post">
+			<form action="send" method="post" id='presup-form'>
 				<h2>Cuéntanos sobre ti y tu proyecto</h2>
 				<h3>Indícanos tus datos para poder contactarte</h3>
 				<div class="inp">
-					<input type="text" name="nombre" id="nombre" placeholder="Nombre*">
+					<input type="text" name="nombre" id="presup-nombre" placeholder="Nombre*">
 				</div>
 				<div class="inp">
-					<input type="text" name="email" id="email" placeholder="Email*">
+					<input type="text" name="email" id="presup-email" placeholder="Email*">
 				</div>
 				<div class="inp">
-					<input type="text" name="telefono" id="telefono"placeholder="Teléfono">
+					<input type="text" name="telefono" id="presup-telefono"placeholder="Teléfono">
 				</div>
 				<div class="inp">
-					<input type="text" name="company" id="company" placeholder="Compañía">
+					<input type="text" name="company" id="presup-company" placeholder="Compañía">
 				</div>
 				<h3>¿En qué te podemos ayudar?</h3>
 				<div class="checkbox-container">
-					<span><input type="checkbox"><p>Desarrollo web</p></span>
-					<span><input type="checkbox"><p>Desarrollo UI/UX</p></span>
+					<span><input type="checkbox" id="presup-checkbox-webdev" value="webdev"><p>Desarrollo web</p></span>
+					<span><input type="checkbox" id="presup-checkbox-uiuxdev" value="uiux"><p>Desarrollo UI/UX</p></span>
 				</div>
 				<div class="checkbox-container">
-					<span><input type="checkbox"><p>Comercio en línea</p></span>						
-					<span><input type="checkbox"><p>Marketing en Internet</p></span>
+					<span><input type="checkbox" id="presup-checkbox-ecommerce" value="ecommerce"><p>Comercio en línea</p></span>						
+					<span><input type="checkbox" id="presup-checkbox-marketing" value="marketing"><p>Marketing en Internet</p></span>
 				</div>
 				<h3>Describe tu proyecto</h3>
-				<textarea name="" id="" cols="200" rows="10"></textarea>
-				<button class="active">Enviar</button>
+				<textarea name="presup-textarea" cols="200" rows="10" id="presup-textarea"></textarea>
+				<button class="active" id="submit">Enviar</button>
 				<p>Usaremos esta información únicamente para contactarte en función de lo que necesites. No queremos venderte nada ni tampoco enviarte spam. <i class="fa-regular fa-hand-spock"></i></p>
 			</form>
 		</div>

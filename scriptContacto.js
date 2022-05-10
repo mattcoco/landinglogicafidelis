@@ -35,3 +35,7 @@ buttonInfo.addEventListener('click', () => {
     bloquePregunta.classList.add('active');
     bloquePreguntaAddem.classList.add('active');
 });
+
+// Tratamiento de formulario
+const presupForm = document.getElementById('presup-form');
+const presupName = document.getElementById('presup-nombre');

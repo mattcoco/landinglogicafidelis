@@ -15,13 +15,13 @@ setInterval(changeLandingMsg, 2500);
 function changeLandingMsg() {
     switch (state) {
         case 1:
-            for (let i = 0; i <= textLanding.length-1; i ++) {
+            for (let i = 0; i <= textLanding.length - 1; i++) {
                 textLanding[i].classList.remove('active');
             }
             textLanding[0].classList.toggle('active');
             break;
         case 2:
-            textLanding[1].classList.toggle('active');            
+            textLanding[1].classList.toggle('active');
             break;
         case 3:
             textLanding[0].classList.toggle('active');
@@ -36,7 +36,7 @@ function changeLandingMsg() {
             textLanding[4].classList.toggle('active');
             break;
         case 6:
-            textLanding[4].classList.toggle('active');          
+            textLanding[4].classList.toggle('active');
             textLanding[5].classList.toggle('active');
             break;
 
@@ -58,21 +58,19 @@ const info3 = document.getElementById('info3');
 function scrollAppear() {
     const triggerBottom = window.innerHeight / 5 * 4;
     const elemTop1 = info1.getBoundingClientRect().top;
-    if(elemTop1 < triggerBottom) {
+    if (elemTop1 < triggerBottom) {
         info1.classList.add('mostrar');
     }
     const elemTop2 = info2.getBoundingClientRect().top;
-    if(elemTop2 < triggerBottom) {
+    if (elemTop2 < triggerBottom) {
         info2.classList.add('mostrar');
     }
     const elemTop3 = info3.getBoundingClientRect().top;
-    if(elemTop3 < triggerBottom) {
+    if (elemTop3 < triggerBottom) {
         info3.classList.add('mostrar');
     }
-        
+
 }
-
-
 // Intento de scrollAppear pero por función
 // const serviciosContainer = document.querySelector('.servicios-container');
 // window.addEventListener('scroll', scrollAppear(serviciosContainer));
@@ -85,4 +83,3 @@ function scrollAppear() {
 //         elem.classList.remove('mostrar');
 //     }
 // }
-
